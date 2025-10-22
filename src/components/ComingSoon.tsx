@@ -3,7 +3,7 @@ import "../styles/animated-bg.css";
 
 export default function ComingSoon() {
   return (
-    <main className="flex flex-col items-center justify-center min-h-screen w-screen bg-gradient-to-b from-gray-900 to-gray-800 text-white m-0 p-0 fixed top-0 left-0 animated-bg">
+    <main className="flex flex-col items-center justify-center min-h-screen w-screen bg-linear-to-b from-gray-900 to-gray-800 text-white m-0 p-0 fixed top-0 left-0 animated-bg">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
