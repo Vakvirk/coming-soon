@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import "../styles/animated-bg.css";
+import Timer from "./Timer";
 
 export default function ComingSoon() {
   return (
@@ -13,14 +14,18 @@ export default function ComingSoon() {
         <div className="flex justify-center mb-6">
           <div className="w-20 h-20 bg-indigo-500/30 rounded-full flex items-center justify-center animate-pulse border-2">
             <img
-              src="/src/assets/construction-svgrepo-com.svg"
+              src="/construction-svgrepo-com.svg"
               alt="construction icon"
               className="w-18 h-18"
             />
           </div>
         </div>
 
-        <h1 className="text-5xl font-bold mb-4">Strona w budowie</h1>
+        <h1 className="text-5xl font-bold mb-6">Strona w budowie</h1>
+
+        <p className="text-xl font-semibold">Start za:</p>
+
+        <Timer></Timer>
       </motion.div>
     </main>
   );
